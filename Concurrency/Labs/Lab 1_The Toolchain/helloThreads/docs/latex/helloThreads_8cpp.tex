@@ -1,0 +1,44 @@
+\hypertarget{helloThreads_8cpp}{}\doxysection{hello\+Threads.\+cpp File Reference}
+\label{helloThreads_8cpp}\index{helloThreads.cpp@{helloThreads.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{helloThreads_8cpp_ae0dbf7b3f4f43153450248b3ed6e6b51}{call\+\_\+from\+\_\+thread}} (int tid)
+\begin{DoxyCompactList}\small\item\em This function will be called from a thread. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{helloThreads_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em The eponymous main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{helloThreads_8cpp_ae0dbf7b3f4f43153450248b3ed6e6b51}\label{helloThreads_8cpp_ae0dbf7b3f4f43153450248b3ed6e6b51}} 
+\index{helloThreads.cpp@{helloThreads.cpp}!call\_from\_thread@{call\_from\_thread}}
+\index{call\_from\_thread@{call\_from\_thread}!helloThreads.cpp@{helloThreads.cpp}}
+\doxysubsubsection{\texorpdfstring{call\_from\_thread()}{call\_from\_thread()}}
+{\footnotesize\ttfamily void call\+\_\+from\+\_\+thread (\begin{DoxyParamCaption}\item[{int}]{tid }\end{DoxyParamCaption})}
+
+
+
+This function will be called from a thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tid} & the thread number\\
+\hline
+\end{DoxyParams}
+tid is assigned a number when the thread is created. Any function created by a thread must have this function signature The function prints out its thread id. \mbox{\Hypertarget{helloThreads_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{helloThreads_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{helloThreads.cpp@{helloThreads.cpp}!main@{main}}
+\index{main@{main}!helloThreads.cpp@{helloThreads.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The eponymous main function. 
+
+Forks off 10 threads using a vector of num\+\_\+threads std\+::thread objects. Then joins each thread with the main thread and exits $<$ Launch a group of threads ~\newline
+
+
+$<$ Join the threads with the main thread
